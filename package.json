@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express.js": "^1.0.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.9.0",
+    "node": "^22.9.0",
+    "nodejs": "^0.0.0",
+    "nodemon": "^3.1.4",
+    "npm": "^10.8.3"
+  },
+  "name": "actual-first-ida-lab01-blaxton",
+  "version": "1.0.0",
+  "description": "Due-August-27",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
