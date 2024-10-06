@@ -1,36 +1,215 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
- background-color: lightgrey;
-  }
-  
-  header{
-    background-color: gray;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
+  background-color: #f2f2f7; /* Soft background like Apple’s gray */
+  color: #333; /* Darker text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Header */
+header {
+  background-color: #007aff; /* Apple’s iconic vibrant blue */
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 122, 255, 0.3); /* Smooth shadow */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Form */
+.workout-form {
+  background-color: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.workout-form:hover {
+  transform: translateY(-5px);
+}
+
+.workout-form h2 {
+  font-size: 1.8rem;
+  color: #007aff;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007aff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #005ecb;
+  box-shadow: 0 4px 12px rgba(0, 94, 203, 0.3);
+}
+
+#addExerciseBtn {
+  background-color: #34c759;
+}
+
+#addExerciseBtn:hover {
+  background-color: #28a745;
+}
+
+/* Workout Cards */
+#workoutCards {
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  color: #007aff;
+  margin-bottom: 10px;
+}
+
+.exercise-detail {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.exercise-detail strong {
+  color: #333;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
   .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  textarea {
-    width: 100%;
-  }
-  
-  #output {
-    border: 1px solid #ccc;
     padding: 10px;
   }
 
-  footer{
-    text-align: center;
-    background-color: gray;
-    padding: 50px;
-    font-size: large;
+  h1 {
+    font-size: 2rem;
   }
-  
-  
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+/* Header styling */
+header {
+  background-color: #007aff; /* Vibrant blue */
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 122, 255, 0.3); /* Smooth shadow */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #d1eaff; /* Slightly lighter color for the subheading */
+  letter-spacing: 0.5px;
+  margin-top: -5px;
+}
