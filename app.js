@@ -56,13 +56,13 @@ app.get('/read', async (req, res) => {
 
 })
 
-app.get('/insert', async (req, res) => {
+app.get('/update', async (req, res) => {
 
-  console.log('in /insert');
+  console.log('in /update');
   await client.connect();
   await client.db("jab-db").collection("dev-john(allen)").insertOne({ post: 'hardcoded post insert ' });
   await client.db("jab-db").collection("dev-john(allen)").insertOne({ iJustMadeThisUp: 'hardcoded new key ' });
-  res.render('insert');
+  res.render('update');
 
 });
 
@@ -73,7 +73,7 @@ app.post('/update/:id', async (req, res) => {
   client.connect;
   const collection = client.db("jab-db").collection("dev-john(allen)");
   let result = await collection.findOneAndUpdate(
-    { "_id": new ObjectId(req.params.id) }, { $set: { "post": "Roll Tide" } }
+    { "_id": new ObjectId(req.params.id) }, { $set: { "post": "Your max is weak" } }
   )
     .then(result => {
       console.log(result);
