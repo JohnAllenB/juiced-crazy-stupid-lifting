@@ -1,4 +1,4 @@
-# juiced-crazy-stupid-lifting
+# Bigger Ego Lifting
 
 - Track Exercise Splits: Input and save your workout split (e.g., upper body, lower body, push-pull-legs, etc.) for each day.
 - Log Workouts: Add the name of each exercise you perform during a workout session.
